@@ -1,0 +1,14 @@
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\SeleniumTests.dll
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\SeleniumTests.pdb
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\nunit.framework.dll
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\WebDriver.dll
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\nunit.framework.pdb
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\nunit.framework.xml
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\WebDriver.xml
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\obj\Debug\SeleniumTests.csprojAssemblyReference.cache
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\obj\Debug\SeleniumTests.csproj.CoreCompileInputs.cache
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\obj\Debug\SeleniumTests.csproj.CopyComplete
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\obj\Debug\SeleniumTests.dll
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\obj\Debug\SeleniumTests.pdb
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\WebDriver.Support.dll
+C:\Users\aleks\source\repos\SeleniumTests\SeleniumTests\bin\Debug\WebDriver.Support.xml
