@@ -5,7 +5,7 @@ using System;
 
 namespace SeleniumTests
 {
-    public class Test
+    public class LoginTutByTests
     {
         IWebDriver driver;
 
@@ -17,7 +17,7 @@ namespace SeleniumTests
         }
 
         [Test]
-        public void Test1()
+        public void LoginTest()
         {
             var findMethods = new FindMethods();
             findMethods.FindByXPath(driver, "//a[@class = 'enter']").Click();
@@ -30,8 +30,8 @@ namespace SeleniumTests
             var submitButton = driver.FindElement(By.XPath("//input[@type = 'submit']"));
             submitButton.SendKeys(Keys.Enter);
 
-            var success = driver.FindElement(By.XPath("//a[contains(@class,'logedin')]"));
-            Assert.True(success.Displayed,"Success element is not displayed");
+            var logedInSection = driver.FindElement(By.XPath("//a[contains(@class,'logedin')]"));
+            Assert.True(logedInSection.Displayed,"Success element is not displayed");
         }
 
         [TearDown]
