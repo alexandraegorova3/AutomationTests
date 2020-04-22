@@ -21,12 +21,20 @@ namespace SeleniumTests
         public void UserTest()
         {
             driver.FindElement(By.XPath("//button[text() = 'Get New User']")).Click();
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            var user = wait.Until(condition =>
+            var user = Wait(By.XPath("//div[@id='loading'][contains(text(), 'First Name')]"), TimeSpan.FromSeconds(5));
+
+            Assert.IsTrue(user);
+        }
+
+        public bool Wait(By locator, TimeSpan time)
+        {
+            var wait = new WebDriverWait(driver, time);
+
+            return wait.Until(condition =>
             {
                 try
                 {
-                    var elementToBeDisplayed = driver.FindElement(By.XPath("//div[@id='loading'][contains(text(), 'First Name')]"));
+                    var elementToBeDisplayed = driver.FindElement(locator);
                     return elementToBeDisplayed.Displayed;
                 }
                 catch (StaleElementReferenceException)
@@ -38,8 +46,6 @@ namespace SeleniumTests
                     return false;
                 }
             });
-
-            Assert.IsTrue(user);
         }
 
         [TearDown]

@@ -21,12 +21,23 @@ namespace SeleniumTests
         public void UserTest()
         {
             driver.FindElement(By.Id("cricle-btn")).Click();
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            var percentage = wait.Until(condition =>
+            var percentage = Wait(By.XPath("//div[@id='fakhar-cricle']//div[@class='percenttext']"), TimeSpan.FromSeconds(20));
+
+            if (percentage)
+            {
+                driver.Navigate().Refresh();
+            }
+        }
+
+        public bool Wait(By locator, TimeSpan time)
+        {
+            var wait = new WebDriverWait(driver, time);
+
+            return wait.Until(condition =>
             {
                 try
                 {
-                    var elementToBeDisplayed = driver.FindElement(By.XPath("//div[@id='fakhar-cricle']//div[@class='percenttext']"));
+                    var elementToBeDisplayed = driver.FindElement(locator);
                     var x = int.Parse(elementToBeDisplayed.Text.Replace('%', ' '));
                     return x > 50;
                 }
@@ -39,11 +50,6 @@ namespace SeleniumTests
                     return false;
                 }
             });
-
-            if (percentage)
-            {
-                driver.Navigate().Refresh();
-            }
         }
 
         [TearDown]

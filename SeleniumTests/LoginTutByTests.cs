@@ -57,13 +57,22 @@ namespace SeleniumTests
             var submitButton = driver.FindElement(By.XPath("//input[@type = 'submit']"));
             submitButton.SendKeys(Keys.Enter);
 
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
 
-            var userName = wait.Until(condition =>
+            var userName = Wait(By.XPath("//span[@class='uname']"), TimeSpan.FromSeconds(15));
+            
+
+            Assert.True(userName, "User name is not displayed");
+        }
+
+        public bool Wait(By locator, TimeSpan time)
+        {
+            var wait = new WebDriverWait(driver, time);
+
+            return  wait.Until(condition =>
             {
                 try
                 {
-                    var elementToBeDisplayed = driver.FindElement(By.XPath("//span[@class='uname']"));
+                    var elementToBeDisplayed = driver.FindElement(locator);
                     return elementToBeDisplayed.Displayed;
                 }
                 catch (StaleElementReferenceException)
@@ -75,8 +84,6 @@ namespace SeleniumTests
                     return false;
                 }
             });
-
-            Assert.True(userName, "User name is not displayed");
         }
 
         [TearDown]

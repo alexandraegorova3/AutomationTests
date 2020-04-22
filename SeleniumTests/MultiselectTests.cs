@@ -25,7 +25,7 @@ namespace SeleniumTests
             select.SelectByText("Florida");
             select.SelectByText("California");
             select.SelectByText("Texas");
-            Assert.IsTrue(select.AllSelectedOptions.Count == 3);
+            Assert.AreEqual(select.AllSelectedOptions.Count, 3);
             
          }
 

@@ -22,7 +22,7 @@ namespace SeleniumTests
         {
             driver.FindElement(By.XPath("//div[text() = 'Java Script Alert Box']/following-sibling::div//button")).Click();
             var alert = driver.SwitchTo().Alert();
-            Assert.IsTrue(alert != null);
+            Assert.NotNull(alert);
             alert.Accept();
         }
 
@@ -33,7 +33,7 @@ namespace SeleniumTests
             var alert = driver.SwitchTo().Alert();
             alert.Accept();
             var confirm = driver.FindElement(By.Id("confirm-demo"));
-            Assert.IsTrue(confirm.Text == "You pressed OK!");
+            Assert.AreEqual(confirm.Text, "You pressed OK!");
         }
 
         [Test]
@@ -43,7 +43,7 @@ namespace SeleniumTests
             var alert = driver.SwitchTo().Alert();
             alert.Dismiss();
             var confirm = driver.FindElement(By.Id("confirm-demo"));
-            Assert.IsTrue(confirm.Text == "You pressed Cancel!");
+            Assert.AreEqual(confirm.Text, "You pressed Cancel!");
         }
 
         [TearDown]
