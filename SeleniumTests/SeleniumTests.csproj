@@ -57,6 +57,9 @@
     <Compile Include="FindMethods.cs" />
     <Compile Include="LoginTutByTests.cs" />
     <Compile Include="MultiselectTests.cs" />
+    <Compile Include="PagePatternTests.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
     <Compile Include="ProgressTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersTableTests.cs" />
