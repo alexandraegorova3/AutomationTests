@@ -8,17 +8,15 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.Pages
 {
-    public class MainPage
+    public class MainPage: BaseTutByPage
     {
-        private IWebDriver driver;
         private By userNameLocator = By.XPath("//span[@class='uname']");
         private By logoutButtonLocator = By.LinkText("Выйти");
 
         public bool IsLoaded;
 
-        public MainPage(IWebDriver driver)
+        public MainPage(IWebDriver driver): base(driver)
         {
-            this.driver = driver;
             IsLoaded = Wait(userNameLocator, TimeSpan.FromSeconds(10));
         }
 
@@ -27,28 +25,6 @@ namespace SeleniumTests.Pages
             driver.FindElement(userNameLocator).Click();
             driver.FindElement(logoutButtonLocator).Click();
             return new LoginPage(driver);
-        }
-
-        private bool Wait(By locator, TimeSpan time)
-        {
-            var wait = new WebDriverWait(driver, time);
-
-            return wait.Until(condition =>
-            {
-                try
-                {
-                    var elementToBeDisplayed = driver.FindElement(locator);
-                    return elementToBeDisplayed.Displayed;
-                }
-                catch (StaleElementReferenceException)
-                {
-                    return false;
-                }
-                catch (NoSuchElementException)
-                {
-                    return false;
-                }
-            });
         }
     }
 }

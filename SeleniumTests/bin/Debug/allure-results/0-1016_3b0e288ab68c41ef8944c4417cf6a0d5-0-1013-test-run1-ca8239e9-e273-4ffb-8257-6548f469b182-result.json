@@ -1,0 +1,73 @@
+{
+  "uuid": "0-1016_3b0e288ab68c41ef8944c4417cf6a0d5-0-1013-test-run1",
+  "historyId": "SeleniumTests.PagePatternTests.LogoutTest(\"seleniumtests@tut.by\",\"123456789zxcvbn\") (\"seleniumtests@tut.by\", \"123456789zxcvbn\")",
+  "fullName": "SeleniumTests.PagePatternTests.LogoutTest(\"seleniumtests@tut.by\",\"123456789zxcvbn\") (\"seleniumtests@tut.by\", \"123456789zxcvbn\")",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "SeleniumTests.PagePatternTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogoutTest"
+    },
+    {
+      "name": "package",
+      "value": "SeleniumTests.PagePatternTests"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumTests.PagePatternTests"
+    },
+    {
+      "name": "subSuite",
+      "value": "Tut.by"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "https://www.tut.by/",
+      "url": "https://www.tut.by/",
+      "type": "link"
+    }
+  ],
+  "name": "LogoutTest(\"seleniumtests@tut.by\",\"123456789zxcvbn\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Logout test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "Parameter #1, String",
+      "value": "seleniumtests@tut.by"
+    },
+    {
+      "name": "Parameter #2, String",
+      "value": "123456789zxcvbn"
+    }
+  ],
+  "start": 1588615053798,
+  "stop": 1588615063312
+}

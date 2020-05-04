@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.Pages
 {
-    public class LoginPage
+    public class LoginPage: BaseTutByPage
     {
         private By enterButtonLocator = By.XPath("//a[@class = 'enter']");
         private By usernameLocator = By.XPath("//input[@name = 'login']");
@@ -17,11 +17,8 @@ namespace SeleniumTests.Pages
 
         public bool IsLoaded => Wait(enterButtonLocator, TimeSpan.FromSeconds(10));
 
-        private IWebDriver driver;
-
-        public LoginPage(IWebDriver driver)
+        public LoginPage(IWebDriver driver): base(driver)
         {
-            this.driver = driver;
         }
 
         public void Load()
@@ -58,26 +55,6 @@ namespace SeleniumTests.Pages
             return SubmitLogin();
         }
 
-        private bool Wait(By locator, TimeSpan time)
-        {
-            var wait = new WebDriverWait(driver, time);
 
-            return wait.Until(condition =>
-            {
-                try
-                {
-                    var elementToBeDisplayed = driver.FindElement(locator);
-                    return elementToBeDisplayed.Displayed;
-                }
-                catch (StaleElementReferenceException)
-                {
-                    return false;
-                }
-                catch (NoSuchElementException)
-                {
-                    return false;
-                }
-            });
-        }
     }
 }
