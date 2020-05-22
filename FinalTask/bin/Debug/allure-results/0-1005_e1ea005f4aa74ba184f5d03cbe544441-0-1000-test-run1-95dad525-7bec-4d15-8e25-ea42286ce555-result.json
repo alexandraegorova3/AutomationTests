@@ -1,0 +1,64 @@
+{
+  "uuid": "0-1005_e1ea005f4aa74ba184f5d03cbe544441-0-1000-test-run1",
+  "historyId": "FinalTask.FinalTests<FirefoxDriver>.Cart",
+  "fullName": "FinalTask.FinalTests<FirefoxDriver>.Cart",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "testMethod",
+      "value": "Cart"
+    },
+    {
+      "name": "package",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "suite",
+      "value": "FinalTask.FinalTests<FirefoxDriver>"
+    },
+    {
+      "name": "subSuite",
+      "value": "Final task"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "http://automationpractice.com/",
+      "url": "http://automationpractice.com/",
+      "type": "link"
+    }
+  ],
+  "name": "Cart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Add to cart test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590174859201,
+  "stop": 1590174880580
+}

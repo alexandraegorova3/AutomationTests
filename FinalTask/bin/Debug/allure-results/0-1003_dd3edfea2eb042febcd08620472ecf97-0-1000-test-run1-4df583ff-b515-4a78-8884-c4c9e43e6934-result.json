@@ -1,0 +1,64 @@
+{
+  "uuid": "0-1003_dd3edfea2eb042febcd08620472ecf97-0-1000-test-run1",
+  "historyId": "FinalTask.FinalTests<FirefoxDriver>.AutoWishList",
+  "fullName": "FinalTask.FinalTests<FirefoxDriver>.AutoWishList",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "testMethod",
+      "value": "AutoWishList"
+    },
+    {
+      "name": "package",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "suite",
+      "value": "FinalTask.FinalTests<FirefoxDriver>"
+    },
+    {
+      "name": "subSuite",
+      "value": "Final task"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "http://automationpractice.com/",
+      "url": "http://automationpractice.com/",
+      "type": "link"
+    }
+  ],
+  "name": "AutoWishList",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Auto wish list test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590174842811,
+  "stop": 1590174859201
+}

@@ -1,0 +1,64 @@
+{
+  "uuid": "0-1008_bc5ef4a4311048059cda61cad1466aef-0-1006-test-run1",
+  "historyId": "FinalTask.FinalTests<ChromeDriver>.Login",
+  "fullName": "FinalTask.FinalTests<ChromeDriver>.Login",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "testMethod",
+      "value": "Login"
+    },
+    {
+      "name": "package",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "suite",
+      "value": "FinalTask.FinalTests<ChromeDriver>"
+    },
+    {
+      "name": "subSuite",
+      "value": "Final task"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "http://automationpractice.com/",
+      "url": "http://automationpractice.com/",
+      "type": "link"
+    }
+  ],
+  "name": "Login",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Login test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590174815106,
+  "stop": 1590174821262
+}

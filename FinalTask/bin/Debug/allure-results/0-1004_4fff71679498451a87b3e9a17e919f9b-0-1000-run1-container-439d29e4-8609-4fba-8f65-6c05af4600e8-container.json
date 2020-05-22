@@ -1,0 +1,12 @@
+{
+  "uuid": "0-1004_4fff71679498451a87b3e9a17e919f9b-0-1000-run1-container",
+  "name": "FinalTask.FinalTests`1",
+  "children": [
+    "0-1004_4fff71679498451a87b3e9a17e919f9b-0-1000-test-run1"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1590174898823,
+  "stop": 1590174914298
+}

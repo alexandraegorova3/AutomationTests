@@ -1,0 +1,64 @@
+{
+  "uuid": "0-1007_f89360242d7e46d8911c53a50e339d42-0-1006-test-run1",
+  "historyId": "FinalTask.FinalTests<ChromeDriver>.CreateAccount",
+  "fullName": "FinalTask.FinalTests<ChromeDriver>.CreateAccount",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAccount"
+    },
+    {
+      "name": "package",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "suite",
+      "value": "FinalTask.FinalTests<ChromeDriver>"
+    },
+    {
+      "name": "subSuite",
+      "value": "Final task"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "http://automationpractice.com/",
+      "url": "http://automationpractice.com/",
+      "type": "link"
+    }
+  ],
+  "name": "CreateAccount",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Create account test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590174805560,
+  "stop": 1590174815106
+}

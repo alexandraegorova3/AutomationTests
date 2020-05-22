@@ -1,0 +1,64 @@
+{
+  "uuid": "0-1002_2b25fce5a9e94d61b79dc77aac24d2cd-0-1000-test-run1",
+  "historyId": "FinalTask.FinalTests<FirefoxDriver>.Login",
+  "fullName": "FinalTask.FinalTests<FirefoxDriver>.Login",
+  "labels": [
+    {
+      "name": "host",
+      "value": "ASUS-VIVOBOOK-P"
+    },
+    {
+      "name": "testClass",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "testMethod",
+      "value": "Login"
+    },
+    {
+      "name": "package",
+      "value": "FinalTask.FinalTests`1"
+    },
+    {
+      "name": "suite",
+      "value": "FinalTask.FinalTests<FirefoxDriver>"
+    },
+    {
+      "name": "subSuite",
+      "value": "Final task"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Alexandra Egorova"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    }
+  ],
+  "links": [
+    {
+      "name": "http://automationpractice.com/",
+      "url": "http://automationpractice.com/",
+      "type": "link"
+    }
+  ],
+  "name": "Login",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Login test",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590174890991,
+  "stop": 1590174898823
+}
